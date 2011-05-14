@@ -1,0 +1,31 @@
+<idea-plugin version="2">
+    <name>Plugin name here</name>
+    <description>short description of the plugin</description>
+    <version>1.0</version>
+    <vendor>YourCompany</vendor>
+    <idea-version since-build="8000"/>
+
+    <application-components>
+        <!-- Add your application components here -->
+    </application-components>
+
+    <project-components>
+        <!-- Add your project components here -->
+    </project-components>
+
+    <actions>
+        <!-- Add your actions here -->
+    </actions>
+
+    <extensions defaultExtensionNs="com.intellij">
+        <!-- Add your extensions here -->
+        <fileTypeFactory>com.metamx.idea.PigFileTypeFactory</fileTypeFactory>
+        <lang.syntaxHighlighterFactory>com.metamx.idea.PigSyntaxHighlighterFactory</lang.syntaxHighlighterFactory>
+        <lang.parserDefinition>com.metamx.idea.PigParserDefinition</lang.parserDefinition>
+    </extensions>
+    <!--<module-components>
+        <component>
+            <implementation-class>com.metamx.idea.PigLanguage</implementation-class>
+        </component>
+    </module-components>-->
+</idea-plugin>
