@@ -1,4 +1,4 @@
-package com.metamx.idea;
+package com.metamx.idea.pig;
 
 import com.intellij.lang.ASTNode;
 import com.intellij.lang.ParserDefinition;

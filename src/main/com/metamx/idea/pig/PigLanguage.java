@@ -1,7 +1,6 @@
-package com.metamx.idea;
+package com.metamx.idea.pig;
 
 import com.intellij.lang.Language;
-import com.intellij.openapi.fileTypes.LanguageFileType;
 import org.jetbrains.annotations.NonNls;
 import org.jetbrains.annotations.NotNull;
 import org.jetbrains.annotations.Nullable;

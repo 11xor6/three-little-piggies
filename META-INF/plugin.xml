@@ -1,8 +1,8 @@
 <idea-plugin version="2">
-    <name>Plugin name here</name>
-    <description>short description of the plugin</description>
+    <name>Three Little Piggies</name>
+    <description>A language plugin for Apache Pig</description>
     <version>1.0</version>
-    <vendor>YourCompany</vendor>
+    <vendor>Metamarkets</vendor>
     <idea-version since-build="8000"/>
 
     <application-components>
@@ -19,13 +19,9 @@
 
     <extensions defaultExtensionNs="com.intellij">
         <!-- Add your extensions here -->
-        <fileTypeFactory>com.metamx.idea.PigFileTypeFactory</fileTypeFactory>
-        <lang.syntaxHighlighterFactory>com.metamx.idea.PigSyntaxHighlighterFactory</lang.syntaxHighlighterFactory>
-        <lang.parserDefinition>com.metamx.idea.PigParserDefinition</lang.parserDefinition>
+        <fileTypeFactory implementation="com.metamx.idea.pig.PigFileTypeFactory"/>
+        <lang.syntaxHighlighterFactory key="PigLanguage" implementationClass="com.metamx.idea.pig.PigSyntaxHighlighterFactory"/>
+        <!--<lang.parserDefinition>com.metamx.idea.pig.PigParserDefinition</lang.parserDefinition>-->
     </extensions>
-    <!--<module-components>
-        <component>
-            <implementation-class>com.metamx.idea.PigLanguage</implementation-class>
-        </component>
-    </module-components>-->
+    <module-components></module-components>
 </idea-plugin>
